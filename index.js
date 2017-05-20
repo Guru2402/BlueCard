@@ -1,16 +1,16 @@
 var express = require("express"),
-	bodyParser = require("body-parser"),
-	mongoose	= require("mongoose"),
-	ejs          = require("ejs"),
+    bodyParser = require("body-parser"),
+    mongoose	= require("mongoose"),
+    x = 0 ,
+    ejs          = require("ejs"),
     passport    = require("passport"),
     passportLocal = require("passport-local"),
     user           = require("./models/user"),
     expressSession = require("express-session"),
     passportLocalMongoose = require("passport-local-mongoose"),
-    x=0;
+    MongoClient = require('mongodb').MongoClient;
 
 const fs = require("fs");
-var MongoClient = require('mongodb').MongoClient;
 var app = express();
 mongoose.connect('mongodb://localhost/bluecard')
 
