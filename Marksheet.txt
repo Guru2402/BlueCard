@@ -1,0 +1,1 @@
+{"_id":"58d4fc464f549226386e88fa","name":"qwe","regNo":12,"semester":1,"dept":"cse","sub1":213,"sub2":213,"sub3":123,"sub4":123,"sub5":213,"sub6":213,"__v":0}

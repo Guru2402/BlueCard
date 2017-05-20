@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <title>Blue Card</title>
+       
+     
+        <link rel="stylesheet" type="text/css"href="semantic.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+        <script src="semantic.js" > </script>
+        <link rel="stylesheet" href="bootstrap.css"/>
+       
+    </head>
+    <body style="background-color: #870a0a;">
+        
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Blue Card</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Mark Sheet <span class="sr-only">(current)</span></a></li>
+
+      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+              <li><a href="/logout">Logout</a></li>
+              <li><a href="/register">Register</a></li>
+      <form class="navbar-form navbar-right" action="/search" method="post">
+
+          
+        <div class="form-group">
+          <input type="number" class="form-control" placeholder="Type the Reg.No" name="search">
+        </div>
+        <button type="submit" class="btn btn-danger">Search</button>
+      </form></ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>    
+    
+     <div class="ui container segment" style="width:40%;    margin: 20 auto;padding-top: 10px;">
+         <h1 style="margin:0 auto;">Enter The Marks here</h1>
+         <form class="ui form" action="/mark" method="post">
+  <h4 class="ui dividing header" style="    padding-top: 10px;">Student Information</h4>
+  <div class="field">
+    <label>Name</label>
+    <div class="two fields">
+      <div class="field">
+        <input type="text" placeholder="First Name" name="name" required>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Last Name">
+      </div>
+    </div>
+        <div class="field">
+            <label>Register No.</label>
+        <input type="text" placeholder="Reg. No" name="regNo" required>
+      </div>
+        <div class="field">
+            <label>Semester</label>
+        <input type="number"  placeholder="" name="sem"  required>
+      </div>
+      <div class="field">
+        <label>Department</label>
+       <select id="dept" name="dept">
+           <option value="">Choose dept</option>
+      <option value="ece">ECE</option>
+      <option value="cse">CSE</option>
+      <option value="eee">EEE</option>
+           <option value="aero">AERO</option>
+           <option value="mech">MECH</option>
+  </select>
+      </div>
+  </div>
+        <div class="ui container segment" style="width: 80%; margin-top:2em; margin-bottom: 1.5em; margin:0 auto;" id="ece">
+            <h2>Marks</h2>
+<!--              <form class="ui form">-->
+            <div class="field"><label>English 2</label>
+        <input type="text" placeholder="Marks"  name="eceEnglish2">
+      </div>
+            <div class="field"><label>Mathematics 2</label>
+        <input type="text" placeholder="Marks" name="eceMaths2">
+      </div>
+            <div class="field"><label>Physics 2</label>
+        <input type="text" placeholder="Marks" name="ecePhysics2">
+      </div>
+            <div class="field"><label>Chemistry 2</label>
+        <input type="text" placeholder="Marks" name="eceChemistry2">
+      </div>
+            <div class="field"><label>Circuit Theory</label>
+        <input type="text" placeholder="Marks" name="eceCt">
+      </div>
+            <div class="field"><label>Electronic Devices</label>
+        <input type="text" placeholder="Marks" name="eceEd">
+      </div>
+                   <div><input type="submit"  class="btn btn-danger" id="e"></div>
+<!--            </form>-->
+         </div>
+                 <div class="ui container segment" style="width:80%; margin-top:2em; margin-bottom: 1.5em; margin:0 auto;" id="eee">
+            <h2>Marks</h2>
+<!--              <form class="ui form">-->
+            <div class="field"><label>English 2</label>
+        <input type="text" placeholder="Marks" name="eeeEnglish2">
+      </div>
+            <div class="field"><label>Mathematics 2</label>
+        <input type="text" placeholder="Marks" name="eeeMaths2">
+      </div>
+            <div class="field"><label>Physics 2</label>
+        <input type="text" placeholder="Marks" name="eeePhysics2">
+      </div>
+            <div class="field"><label>Chemistry 2</label>
+        <input type="text" placeholder="Marks" name="eeeChemistry2">
+      </div>
+            <div class="field"><label>Circuit Theory</label>
+        <input type="text" placeholder="Marks" name="eeeCt">
+      </div>
+            <div class="field"><label>Basic Civil and Mechanical Engineering </label>
+        <input type="text" placeholder="Marks" name="eeeBcme">
+      </div> <div><input type="submit"  class="btn btn-danger" id="e"></div>
+<!--                     </form>-->
+         </div>
+                 <div class="ui container segment" style="width:80%; margin-top:2em; margin-bottom: 1.5em; margin:0 auto; " id="cse">
+            <h2>Marks</h2>
+<!--              <form class="ui form">-->
+            <div class="field"><label>English 2</label>
+        <input type="text" placeholder="Marks" name="cseEnglish2">
+      </div>
+            <div class="field"><label>Mathematics 2</label>
+        <input type="text" placeholder="Marks" name="cseMaths2">
+      </div>
+            <div class="field"><label>Physics 2</label>
+        <input type="text" placeholder="Marks" name="csePhysics2">
+      </div>
+            <div class="field"><label>Digital Principles and System Design</label>
+        <input type="text" placeholder="Marks" name="cseDpsd">
+      </div>
+            <div class="field"><label>Principles of Computer Engineering</label>
+        <input type="text" placeholder="Marks" name="csePce">
+      </div>
+            <div class="field"><label>Programming using C++</label>
+        <input type="text" placeholder="Marks" name="csePuc">
+            
+      </div> <div><input type="submit"  class="btn btn-danger" id="e"></div>
+<!--                     </form>-->
+         </div>
+         
+                
+          <div class="ui container segment" style="width:80%; margin-top:2em; margin-bottom: 1.5em; margin:0 auto;" id="aero">
+            <h2>Marks</h2>
+<!--              <form class="ui form">-->
+            <div class="field"><label>English 2</label>
+        <input type="text" placeholder="Marks" name="aeroEnglish2">
+      </div>
+            <div class="field"><label>Mathematics 2</label>
+        <input type="text" placeholder="Marks" name="aeroMaths2">
+      </div>
+            <div class="field"><label>Physics 2</label>
+        <input type="text" placeholder="Marks" name="aeroPhysics2">
+      </div>
+            <div class="field"><label>Chemistry 2</label>
+        <input type="text" placeholder="Marks" name="aeroChemistry2">
+      </div>
+            <div class="field"><label>Engineering Mechanics</label>
+        <input type="text" placeholder="Marks" name="aeroEm">
+      </div>
+            <div class="field"><label>Basic Electrical and Electronics Engineering</label>
+        <input type="text" placeholder="Marks" name="aeroBeee">
+                  </div> <div><input type="submit"  class="btn btn-danger" id="e"></div>
+<!--              </form>-->
+         </div>         
+         <div class="ui container segment" style="width:80%; margin-top:2em; margin-bottom: 1.5em; margin:0 auto;" id="mech">
+            <h2>Marks</h2>
+<!--              <form class="ui form">-->
+            <div class="field"><label>English 2</label>
+        <input type="text" placeholder="Marks" name="mechEnglish2">
+      </div>
+            <div class="field"><label>Mathematics 2</label>
+        <input type="text" placeholder="Marks" name="mechMaths2">
+      </div>
+            <div class="field"><label>Physics 2</label>
+        <input type="text" placeholder="Marks" name="mechPhysics2">
+      </div>
+            <div class="field"><label>Chemistry 2</label>
+        <input type="text" placeholder="Marks" name="mechChemistry2">
+      </div>
+            <div class="field"><label>Engineering Mechanics</label>
+        <input type="text" placeholder="Marks" name="mechEm">
+      </div>
+            <div class="field"><label>Basic Electrical And Electronics</label>
+        <input type="text" placeholder="Marks" name="mechBeee">
+                  </div> <div><input type="submit" class="btn btn-danger" id="e"></div>
+<!--             </form>-->
+         </div>
+         </form>
+        </div>
+            <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+                $('#ece').hide();
+                $('#mech').hide();
+                $('#eee').hide();
+                $('#cse').hide();
+            $('#aero').hide();
+        });
+        var dept = $('#dept').val();
+        $('#dept').change( function(){
+            
+            var value = this.value;
+            console.log(value+'2')
+            if (value){
+                $('#ece').hide();
+                $('#mech').hide();
+                $('#eee').hide();
+                $('#cse').hide();
+                $('#aero').hide();
+            }
+            
+            $('#'+ value).show();
+              console.log(value);
+        
+           $('#e')
+               .popup({
+               on:'click'
+           })
+             
+           });
+      
+ console.log(dept);
+         
+        </script>
+        
+    </body>
+</html>
